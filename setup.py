@@ -199,6 +199,10 @@ azure_data_lake = [
     'azure-mgmt-datalake-store>=0.5.0',
     'azure-mgmt-resource>=2.2.0',
 ]
+azure_secrets = [
+    'azure-identity>=1.3.1',
+    'azure-keyvault>=4.1.0',
+]
 cassandra = [
     'cassandra-driver>=3.13.0,<3.21.0',
 ]
@@ -481,7 +485,7 @@ EXTRAS_REQUIREMENTS = {
     'async': async_packages,
     'atlas': atlas,
     'aws': aws,
-    'azure': azure_blob_storage + azure_container_instances + azure_cosmos + azure_data_lake,
+    'azure': azure_blob_storage + azure_container_instances + azure_cosmos + azure_data_lake + azure_secrets,
     'azure_blob_storage': azure_blob_storage,
     'azure_container_instances': azure_container_instances,
     'azure_cosmos': azure_cosmos,
